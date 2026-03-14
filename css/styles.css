@@ -6,7 +6,7 @@ p {
     font-size: 15px;
     line-height: 29px;
     color: rgba(28, 54, 83, .6);
-    padding-bottom: 20px
+    margin-bottom: 10px
 }
 
 h1 {
@@ -152,7 +152,7 @@ body {
 }
 
 *:focus {
-    outline: none !important
+    outline: 0 !important
 }
 
 ul,
@@ -239,7 +239,7 @@ section .header {
     }
 
     50% {
-        transform: scale(0.8)
+        transform: scale(.8)
     }
 
     100% {
@@ -336,7 +336,7 @@ section .header {
 }
 
 .nav-toggle:focus {
-    outline: none
+    outline: 0
 }
 
 .nav-toggle span,
@@ -390,11 +390,11 @@ section .header {
 
 .nav-toggle.active span:after {
     top: 10px;
-    -moz-transform: translatey(-10px) rotate(-45deg);
-    -ms-transform: translatey(-10px) rotate(-45deg);
-    -o-transform: translatey(-10px) rotate(-45deg);
-    -webkit-transform: translatey(-10px) rotate(-45deg);
-    transform: translatey(-10px) rotate(-45deg)
+    -moz-transform: translatey(-10px)rotate(-45deg);
+    -ms-transform: translatey(-10px)rotate(-45deg);
+    -o-transform: translatey(-10px)rotate(-45deg);
+    -webkit-transform: translatey(-10px)rotate(-45deg);
+    transform: translatey(-10px)rotate(-45deg)
 }
 
 .navicon {
@@ -408,7 +408,7 @@ section .header {
 
 .hero {
     max-height: 750px;
-    background: url("../img/hero-min.jpg") right;
+    background: url(../img/hero-min.jpeg)right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -479,7 +479,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 19px
+    height: 40px
 }
 
 header ul.primary-nav {
@@ -501,7 +501,7 @@ header ul.primary-nav li a:hover {
 }
 
 header ul.primary-nav li:last-child a {
-    padding-right: 0px
+    padding-right: 0
 }
 
 header ul.member-actions li {
@@ -627,21 +627,21 @@ header .member-actions {
 }
 
 .features ul.features-stack li:last-child {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     border-bottom: none
 }
 
 .features .ipad-wrap {
     width: 706px;
     height: 1002px;
-    background: url("../img/ipad-device.png") no-repeat center center;
+    background: url(../img/ipad-device.png)no-repeat center center;
     z-index: 1
 }
 
 .features .iphone-wrap {
     width: 304px;
     height: 620px;
-    background: url("../img/iphone6.png") no-repeat center center;
+    background: url(../img/iphone6.png)no-repeat center center;
     position: absolute;
     left: 530px;
     bottom: 129px;
@@ -676,7 +676,7 @@ header .member-actions {
     position: absolute;
     width: 916px;
     height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
+    background: url(../img/macbook-pro.png)no-repeat center center;
     top: 114px;
     z-index: 4;
     left: 50%
@@ -684,7 +684,7 @@ header .member-actions {
 
 .hero-strip {
     margin-top: 120px;
-    background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
+    background: #333844 url(../img/polygonal-bg.jpg)no-repeat center center;
     padding-bottom: 190px;
     position: relative
 }
@@ -839,8 +839,8 @@ header .member-actions {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+    transition: transform .3s ease-in-out
 }
 
 #eng-pics .img-wrap .overlay {
@@ -873,16 +873,16 @@ header .member-actions {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity .3s ease-in-out
 }
 
 #eng-pics .img-wrap:hover {
-    transform: scale(1.05);
+    transform: scale(1.05)
 }
 
 #eng-pics .img-wrap:hover img,
@@ -924,32 +924,32 @@ header .member-actions {
 }
 
 #eng-pics .img-wrap:hover .overlay {
-    opacity: 1;
+    opacity: 1
 }
 
 #eng-pics .fa-search {
     color: white;
-    font-size: 30px;
+    font-size: 30px
 }
 
-@media (max-width: 767px) {
+@media(max-width:767px) {
     .col-xs-6 {
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 0
     }
 }
 
-@media (min-width: 768px) {
+@media(min-width:768px) {
     .col-sm-4 {
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 0
     }
 }
 
-@media (min-width: 992px) {
+@media(min-width:992px) {
     .col-md-2 {
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 0
     }
 }
 
@@ -1064,7 +1064,7 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group i.fa-comment,
 .rsvp .rsvp-form .form-input-group i.fa-check,
 .rsvp .rsvp-form .form-input-group i.fa-lock,
-.rsvp .rsvp-form .form-input-group i.fa-bus{
+.rsvp .rsvp-form .form-input-group i.fa-bus {
     font-size: 14px;
     position: absolute;
     top: 50%;
@@ -1079,7 +1079,7 @@ header .member-actions {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    border: none
+    border: 0
 }
 
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder {
@@ -1148,11 +1148,11 @@ body.modal-open {
     margin-top: 15px;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .toggle-container input {
-    display: none;
+    display: none
 }
 
 .slider-toggle {
@@ -1162,7 +1162,7 @@ body.modal-open {
     background-color: #ccc;
     border-radius: 20px;
     margin-left: 10px;
-    transition: 0.4s;
+    transition: .4s
 }
 
 .slider-toggle:before {
@@ -1174,15 +1174,15 @@ body.modal-open {
     border-radius: 50%;
     top: 1px;
     left: 1px;
-    transition: 0.4s;
+    transition: .4s
 }
 
-input:checked + .slider-toggle {
-    background-color: #4caf50;
+input:checked+.slider-toggle {
+    background-color: #4caf50
 }
 
-input:checked + .slider-toggle:before {
-    transform: translateX(20px);
+input:checked+.slider-toggle:before {
+    transform: translateX(20px)
 }
 
 .slider {
@@ -1192,30 +1192,44 @@ input:checked + .slider-toggle:before {
     background-color: #ccc;
     border-radius: 20px;
     margin-left: 10px;
-    transition: 0.4s;
+    transition: .4s
 }
-
 
 .swiper {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
-  }
+    padding-bottom: 50px
+}
 
-  .swiper-slide {
+.swiper-slide {
     background-position: center;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     width: 300px;
-    height: 400px;
-  }
+    height: 400px
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
-    width: 100%;
-  }
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+}
+
+.image-container img {
+    max-height: 125px;
+    object-fit: contain;
+}
 
 #wedding-intro{
   position:fixed;
+  inset:0;
   top:0;
   left:0;
   width:100%;
@@ -1264,6 +1278,7 @@ input:checked + .slider-toggle:before {
   top:-100px;
   transform-origin:bottom;
   transition:transform 1s ease;
+  rotate: 180deg;
 }
 
 /* carta */
@@ -1272,20 +1287,31 @@ input:checked + .slider-toggle:before {
   position:absolute;
   width:85%;
   height:150px;
-  background:white;
+  background:#e3d1ad;
   left:7.5%;
-  top:25px;
+  top:0px;
+
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
+
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
   transform:translateY(50px);
   transition:transform 1s ease;
 }
 
 .letter-logo{
-  width:200px;
-  max-width:90%;
+  width:400px;
+  max-width:100%;
+}
+
+.letter-date{
+  margin-top:0px;
+  font-size:14px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:white;
 }
 
 /* sello lacre */
@@ -1296,7 +1322,7 @@ input:checked + .slider-toggle:before {
   height:42px;
   background:#9e2b2b;
   border-radius:50%;
-  top:50%;
+  top:0%;
   left:50%;
   transform:translate(-50%,-50%);
   box-shadow:0 3px 8px rgba(0,0,0,0.2);
@@ -1320,4 +1346,36 @@ input:checked + .slider-toggle:before {
 
 .open .letter{
   transform:translateY(-80px);
+}
+
+body.lock-scroll{
+  overflow: hidden;
+  height: 100vh;
+}
+
+#countdown-timer{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.count-box{
+    text-align:center;
+    min-width:90px;
+}
+
+.count-box span{
+    font-size:42px;
+    font-weight:600;
+    display:block;
+}
+
+.count-box p{
+    margin-top:5px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:10px;
+    color:#777;
 }
