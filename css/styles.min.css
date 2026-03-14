@@ -1229,6 +1229,7 @@ input:checked+.slider-toggle:before {
 
 #wedding-intro{
   position:fixed;
+  inset:0;
   top:0;
   left:0;
   width:100%;
@@ -1347,5 +1348,6 @@ input:checked+.slider-toggle:before {
 }
 
 body.lock-scroll{
-  overflow:hidden;
+  overflow: hidden;
+  height: 100vh;
 }

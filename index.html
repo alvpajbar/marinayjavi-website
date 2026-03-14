@@ -64,7 +64,7 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body id="top">
+<body id="top" class="lock-scroll">
     <div id="wedding-intro">
         <div class="envelope-wrapper" onclick="openEnvelope()">
             <div class="envelope">
@@ -729,7 +729,6 @@
     </script>
 
     <script>
-
         function openEnvelope() {
             const envelope = document.querySelector(".envelope");
             envelope.classList.add("open");
