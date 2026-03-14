@@ -65,10 +65,21 @@
 </head>
 
 <body id="top">
-    <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+    <div id="wedding-intro">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="letter">
+                    <h2>Marina & Javi</h2>
+                    <p>17 Octubre 2026</p>
+                </div>
+            </div>
+
+            <p class="open-message">Haz clic para abrir la invitación</p>
+
+        </div>
+    </div>
     <section class="hero">
         <section class="navigation">
             <header>
@@ -490,8 +501,7 @@
                         IBAN copiado al portapapeles ✅
                     </div>
                     </p>
-                    <img src="img/japon.jpg" alt="Japón"
-                        style="width:100%;max-width:600px;margin:10px 0;">
+                    <img src="img/japon.jpg" alt="Japón" style="width:100%;max-width:600px;margin:10px 0;">
                 </div>
             </div>
 
@@ -717,6 +727,27 @@
                     toast.style.visibility = "hidden";
                 }, 500);
             }, 2000); // El toast desaparece después de 2 segundos
+        }
+    </script>
+
+    <script>
+        function openEnvelope() {
+
+            const wrapper = document.querySelector(".envelope");
+
+            wrapper.classList.add("open");
+
+            setTimeout(() => {
+
+                const intro = document.getElementById("wedding-intro");
+                intro.style.transition = "opacity 1.2s";
+                intro.style.opacity = "0";
+
+                setTimeout(() => {
+                    intro.style.display = "none";
+                }, 1200);
+
+            }, 1500);
         }
     </script>
 </body>
