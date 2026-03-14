@@ -67,17 +67,16 @@
 <body id="top">
     <div id="wedding-intro">
         <div class="envelope-wrapper" onclick="openEnvelope()">
-
             <div class="envelope">
                 <div class="flap"></div>
                 <div class="letter">
-                    <h2>Marina & Javi</h2>
-                    <p>17 Octubre 2026</p>
+                    <img src="img/logo-lg.png" class="letter-logo">
+                    <p class="letter-date"></p>
+                    <h1 class="letter-date">17 Octubre 2026</h1>
                 </div>
+                <div class="wax-seal"></div>
             </div>
-
-            <p class="open-message">Haz clic para abrir la invitación</p>
-
+            <p class="open-message">Abrir invitación</p>
         </div>
     </div>
     <section class="hero">
@@ -731,22 +730,18 @@
     </script>
 
     <script>
+
         function openEnvelope() {
-
-            const wrapper = document.querySelector(".envelope");
-
-            wrapper.classList.add("open");
-
+            const envelope = document.querySelector(".envelope");
+            envelope.classList.add("open");
             setTimeout(() => {
-
                 const intro = document.getElementById("wedding-intro");
                 intro.style.transition = "opacity 1.2s";
                 intro.style.opacity = "0";
-
+                document.body.classList.remove("lock-scroll");
                 setTimeout(() => {
                     intro.style.display = "none";
                 }, 1200);
-
             }, 1500);
         }
     </script>
