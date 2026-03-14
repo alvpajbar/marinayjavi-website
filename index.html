@@ -75,7 +75,7 @@
                     <img src="img/logo-lg.png" class="letter-logo">
                     <p class="letter-date">17 Octubre 2026</p>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -127,6 +127,30 @@
                     <p>Os esperamos el día 17 de octubre de 2026 en Sevilla para celebrar con nosotros
                         el día más importante de nuestra vida.</p>
                     <!--<div class="share-bar"></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="countdown-timer">
+                        <div class="count-box">
+                            <span id="days">0</span>
+                            <p>Días</p>
+                        </div>
+                        <div class="count-box">
+                            <span id="hours">0</span>
+                            <p>Horas</p>
+                        </div>
+                        <div class="count-box">
+                            <span id="minutes">0</span>
+                            <p>Minutos</p>
+                        </div>
+                        <div class="count-box">
+                            <span id="seconds">0</span>
+                            <p>Segundos</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -737,6 +761,29 @@
                 }, 1200);
             }, 1500);
         }
+    </script>
+
+    <script>
+
+        const weddingDate = new Date("Oct 17, 2026 11:00:00").getTime();
+
+        const countdown = setInterval(function () {
+
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+        }, 1000);
+
     </script>
 </body>
 
