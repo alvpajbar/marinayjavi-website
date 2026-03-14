@@ -1278,6 +1278,7 @@ input:checked+.slider-toggle:before {
   top:-100px;
   transform-origin:bottom;
   transition:transform 1s ease;
+  rotate: 180deg;
 }
 
 /* carta */
@@ -1288,7 +1289,7 @@ input:checked+.slider-toggle:before {
   height:150px;
   background:#e3d1ad;
   left:7.5%;
-  top:25px;
+  top:0px;
 
   display:flex;
   flex-direction:column;
