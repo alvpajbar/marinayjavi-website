@@ -1301,12 +1301,12 @@ input:checked+.slider-toggle:before {
 }
 
 .letter-logo{
-  width:200px;
-  max-width:90%;
+  width:400px;
+  max-width:100%;
 }
 
 .letter-date{
-  margin-top:5px;
+  margin-top:0px;
   font-size:14px;
   letter-spacing:2px;
   text-transform:uppercase;
@@ -1321,7 +1321,7 @@ input:checked+.slider-toggle:before {
   height:42px;
   background:#9e2b2b;
   border-radius:50%;
-  top:50%;
+  top:0%;
   left:50%;
   transform:translate(-50%,-50%);
   box-shadow:0 3px 8px rgba(0,0,0,0.2);
