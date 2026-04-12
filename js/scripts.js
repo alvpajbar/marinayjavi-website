@@ -187,7 +187,7 @@ $(document).ready(function () {
             title: "Boda de Marina y Javi",
 
             // Event start date
-            start: new Date('Oct 17, 2026 11:00'),
+            start: new Date('Oct 17, 2026 11:30'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
