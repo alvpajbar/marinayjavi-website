@@ -1293,3 +1293,7 @@ body.lock-scroll {
     font-size: 10px;
     color: #777
 }
+
+#hotels li {
+    margin-left: 20px
+}
