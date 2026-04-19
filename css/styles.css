@@ -1222,7 +1222,8 @@ input:checked+.slider-toggle:before {
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
-    transform: translateY(50px)
+    transform: translateY(50px);
+    visibility: hidden
 }
 
 .letter-logo {
@@ -1259,7 +1260,8 @@ input:checked+.slider-toggle:before {
 }
 
 .open .letter {
-    transform: translateY(-80px)
+    transform: translateY(-80px);
+    visibility: visible
 }
 
 body.lock-scroll {
