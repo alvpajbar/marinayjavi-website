@@ -1158,13 +1158,11 @@ input:checked+.slider-toggle:before {
 
 .image-container {
     display: flex;
-    justify-content: center;
-    width: 100%
+    gap: 10px
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
+    max-height: 125px;
     object-fit: contain
 }
 
